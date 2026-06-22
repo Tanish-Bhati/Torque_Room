@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-variation-settings:
+    "wdth" 100;
+}
+/* CSS Custom properties like variables */
+:root{
+    --ActiveLinks: rgb(0, 102, 255);
+}
+/* Ye hmara hero page h jisme bg image h */
+.hero{
+    background-image:linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0, 0, 0, 0.3)
+        ), url(audi-rs-5-audi-r26-3840x2160-26528.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
+}
+/* This is the container of the navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    /* background: rgba(0,0,0,0.2); */
+}
+/* This is the logo image of the navbar */
+.logo img{
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 1s ease;
+}
+.logo img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px ;
+    border-radius: 50px;
+}
+/* Here are the links of the navbar */
+.links
+{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.links div a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+/* Ab hum links me underline effect lgayenge  */
+.links div{
+    position: relative;
+}
+/* from left to right growing line */
+/* .links div::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: 0.3s ease;
+} */
+/* from mid to left and right */
+.links div::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+.links div:hover::after{
+    width: 100%;
+}
+
+/* ab hum clicked links ka color change krnege */
+.links div a:active{
+    color: var(--ActiveLinks);
+}
+
+/* yeh hai hero section ki heading */
+.heading{
+    font-size: 3rem;
+    font-weight:bolder;
+    color: whitesmoke;
+    margin-left: 70px;
+}
+.subhead{
+    margin-left: 70px;
+    font-size: large;
+    color: white;
+}
+/* yeh hmare hero sections ke buttons h */
+.heroButtons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-left: 70px;
+}
+.heroButtons button{
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.primary{
+    background-color: rgb(31, 89, 175);
+    color: white;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,background-color 1s ease;
+}
+.primary:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0px 15px red;
+    background-color: rgba(245, 4, 4, 0.824);
+}
+.secondary{
+    background-color: rgba(125, 115, 115, 0.642);
+    border: 2px solid rgba(253, 253, 253, 0.963);
+    color: white;
+    transition: transform 0.3s ease, background-color 1s ease, box-shadow 0.3s ease;
+}
+.secondary:hover{
+    transform: scale(1.05);
+    background-color: rgb(31, 89, 175);
+    box-shadow: 0 0px 15px var(--ActiveLinks);
+}
+.stats{
+    width: fit-content;
+    margin-left: 30px;
+    display: flex;
+    color: white;
+    border-top: 1px solid rgba(58, 53, 53, 0.63);
+    padding-top: 30px;
+}
+.stat{
+    padding: 0 40px;
+    border-right: 2px solid rgba(58, 53, 53, 0.63); 
+}
+.stat:last-child{
+    border-right: none;
+}
