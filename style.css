@@ -7,6 +7,7 @@
     font-family: "Open Sans", sans-serif;
     font-variation-settings:
         "wdth" 100;
+
 }
 
 html {
@@ -190,9 +191,10 @@ html {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: black;
+    border: 2px solid white;
     color: white;
-    border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category div:hover {
@@ -200,13 +202,16 @@ html {
     background-color: red;
     color: white;
     cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px red;
 }
 
-#Featured{
+#Featured {
     display: flex;
     justify-content: center;
 }
-.featured_cars{
+
+.featured_cars {
     column-count: 3;
     column-gap: 20px;
 }
@@ -222,14 +227,16 @@ html {
     flex-direction: column;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgb(108, 104, 104);
-    transition: transform 0.3s ease , box-shadow 0.3s ease ;
+    box-shadow: 0px 0px 15px rgb(44, 44, 44);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.cards:hover{
+
+.cards:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgb(27, 22, 22) ;
+    box-shadow: 0px 0px 15px rgb(27, 22, 22);
 }
-.button button{
+
+.button button {
     color: rgb(255, 255, 255);
     border: 2px solid red;
     padding-left: 40px;
@@ -241,24 +248,90 @@ html {
     background-color: black;
     transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
-.button button:hover{
+
+.button button:hover {
     transform: scale(1.03);
     border: 2px solid black;
     background-color: red;
     box-shadow: 0px 0px 15px red;
     cursor: pointer;
 }
-.button button:active{
+
+.button button:active {
     box-shadow: 0px 0px 15px blue;
     background-color: black;
 }
-.content{
+
+.content {
     font-size: large;
 }
-.box{
+
+.box {
     display: flex;
     justify-content: space-between;
     align-items: end;
     margin: 20px;
     margin-top: auto;
+}
+
+/* changing featured sections background */
+#cars {
+    background-color: rgb(3, 5, 9);
+}
+
+#Featured {
+    background-color: rgb(3, 5, 9);
+}
+
+#why_us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.121), rgba(0, 0, 0, 0.158)),
+        url(Why_choose_us_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.why_choose_us_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.why_us_head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: red;
+    text-shadow: 0px 5px 15px red;
+}
+
+.why_us_subhead {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.why_us_para {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.why_us_cards{
+    column-count: 3;
+    column-gap: 50px;
+}
+.why_us_first_card{
+    min-height: 200px;
+    min-width: 300px;
+    border: 2px solid white; 
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    margin-bottom: 10px;
 }
