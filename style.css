@@ -568,3 +568,125 @@ html {
     color: rgba(255, 255, 255, 0.5);
     margin: 5px;
 }
+.sec_head{
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+    
+}
+.sec_sub_head{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.sec_button button{
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px red;
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.sec_button button:hover{
+    transform: scale(1.05);
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px red;
+    background-color: red;
+}
+.sec_button button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.sec_button button:active{
+    background-color: black;
+    box-shadow: 0px 0px 15px blue;
+}
+
+.divider {
+    width: 20%;
+    height: 1px;
+    background: rgba(255, 255, 255, .08);
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 15px red;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 80px;
+    height: 2px;
+    background: #ff2020;
+    border-radius: 10px;
+}
+#last_section{
+    background-color: black;
+    min-height: 100vh;
+}
+.first_last{
+    min-height: 60vh;
+}
+.first_last div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.first_last_head{
+    color: red;
+    text-shadow: 0px 5px 15px red;
+    font-size: 1.3rem;
+}
+.first_last_sub_head{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+form{
+    border: 2px solid rgba(168, 164, 164, 0.557);
+    max-width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(88, 79, 79, 0.349);
+}
+.form_input{
+    border: 2px solid rgba(168, 164, 164, 0.557);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+}
+textarea{
+    border-radius: 10px;
+    border: 2px solid rgba(168, 164, 164, 0.557);
+    background-color: transparent;
+    padding: 10px;
+}
+#send{
+    background-color: transparent;
+    border: 2px solid red;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+    transition: transform 0.3s ease , border 0.3s ease, box-shadow 0.3s ease , background-color 0.3s ease;
+}
+#send:hover{
+    background-color: red;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px red;
+    cursor: pointer;
+}
+#send:active{
+    background-color: black;
+    color: white;
+}
