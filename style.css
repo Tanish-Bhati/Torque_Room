@@ -22,7 +22,7 @@ html {
 /* Ye hmara hero page h jisme bg image h */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)), url(audi-rs-5-audi-r26-3840x2160-26528.jpg);
+            rgba(0, 0, 0, 0.3)), url(images/audi-rs-5-audi-r26-3840x2160-26528.jpg);
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
@@ -70,17 +70,6 @@ html {
     position: relative;
 }
 
-/* from left to right growing line */
-/* .links div::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0%;
-    height: 2px;
-    background-color: red;
-    transition: 0.3s ease;
-} */
 /* from mid to left and right */
 .links div::after {
     content: "";
@@ -285,7 +274,7 @@ html {
 
 #why_us {
     background-image: linear-gradient(rgba(0, 0, 0, 0.121), rgba(0, 0, 0, 0.158)),
-        url(Why_choose_us_bg.png);
+        url(images/Why_choose_us_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,7 +375,7 @@ html {
 
 #testimonials {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.043), rgba(0, 0, 0, 0.08)), url('testimonials\ bg.png');
+        linear-gradient(rgba(0, 0, 0, 0.043), rgba(0, 0, 0, 0.08)), url('images/testimonials\ bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -531,7 +520,7 @@ html {
 #second_achivement{
     
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))
-    ,url(acievement_section_second_image.png);
+    ,url(images/acievement_section_second_image.png);
     min-height: 50vh;
     max-height: 50vh;
     background-position: center;
